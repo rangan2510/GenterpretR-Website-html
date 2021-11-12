@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GenterpretR</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/bootstrap-lux.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                        src="/images/branding.png" alt="" height="32"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse mr-auto">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Research"
+                                asp-action="Index">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="News">News</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Clients">Clients</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                People
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams" asp-action="Index">Core
+                                    Team</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams"
+                                    asp-action="Collabs">Academic Collaborators</a>
+                                <a class="dropdown-item " asp-area="" asp-controller="Teams"
+                                    asp-action="Advisors">Advisory Board</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="OncopretR">ONCOPRETR &trade;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+
+
+        <div class="container-fluid hero" style="background-image: url('/images/pub-hero.jpg')">
+            <div class="row">
+                <h1 class="hero-text mx-auto">Research</h1>
+            </div>
+        </div>
+
+
+
+        <!-- Marketing messaging and featurettes
+    ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container">
+            <div class="row v-gap"></div>
+            <div class="container marketing">
+
+                <!-- START THE FEATURETTES -->
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">
+                            Operating Systems for Precision Medicine. <span class="text-muted">An organized
+                                frame.</span>
+                        </h2>
+                        <p class="lead text-justify">In the new era of personalized therapeutic, operating system
+                            protocols for precision medicine can channelized and synchronized the area of personalized
+                            therapeutic. To create huge data warehouse which can help to track the progressive condition
+                            of patients. Intervention of AI (specially Federated AI), Network Model and Machine Learning
+                            algorithms helps to propose professional applications for day-to-day utilization. </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/feat_1.jpg" class="rounded mx-auto featurette-image image-fit" width="100%"
+                            height="400">
+                    </div>
+                </div>
+
+                <div class="row v-gap"></div>
+                <hr class="featurette-divider">
+                <div class="row v-gap"></div>
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Precision Oncology. <span class="text-muted">Personalized
+                                Therapeutic and Diagnostic.</span></h2>
+                        <p class="lead text-justify">Molecular profiling becomes crucial due to the heterogeneous nature
+                            of tumors. This helps to interpret the involvement of genomic variants in the cause or
+                            development of individual cancer. Our comprehensive frame tracks the cell-specific and
+                            genome-specific modification which can assist the clinicians/ doctors to come up with an
+                            appropriate clinical decision. Due to the advancement in computational genomics, we provide
+                            personalized malignancy profiling for the patients where the genome-wide transition can be
+                            observed.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="images/feat_2.jpg" class="rounded mx-auto featurette-image image-fit" width="100%"
+                            height="400">
+
+                    </div>
+                </div>
+
+                <div class="row v-gap"></div>
+                <hr class="featurette-divider">
+                <div class="row v-gap"></div>
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Precision Medicine for Viral Infection.<span
+                                class="text-muted">Genome Based medicine based on the target.</span></h2>
+                        <p class="lead text-justify">A surge has been observed in the area of viral infection and
+                            related studies, specially after Covid-19 situation. Even in SARS-CoV-2 infection, vital
+                            organs are individually affected and rate differs in each patient. Our method gathers the
+                            genetic and other molecular information of patients and accelerates the virus type
+                            identification for unknown viruses. Genome based profiling also assist to create P4 systems
+                            medicine.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/feat_3.jpg" class="rounded mx-auto featurette-image image-fit" width="100%"
+                            height="400">
+
+                    </div>
+                </div>
+
+                <div class="row v-gap"></div>
+                <hr class="featurette-divider">
+
+                <!-- /END THE FEATURETTES -->
+
+            </div><!-- /.container -->
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <footer class="container py-1">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img src="/images/logo.svg" height="32px">
+                    <small class="d-block mb-3 text-muted">&copy; GenterpretR 2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a asp-controller="Home" asp-action="OncopretR">
+                                <h5>ONCOPRETER</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Research" asp-action="Index">
+                                <h5>Research</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Clients">
+                                <h5>Clients</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Index">
+                                <h5>Core Team</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Collabs">
+                                <h5>Academic Collaborators</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Contact">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GenterpretR</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/bootstrap-lux.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                        src="/images/branding.png" alt="" height="32"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse mr-auto">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Research"
+                                asp-action="Index">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="News">News</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Clients">Clients</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                People
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams" asp-action="Index">Core
+                                    Team</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams"
+                                    asp-action="Collabs">Academic Collaborators</a>
+                                <a class="dropdown-item " asp-area="" asp-controller="Teams"
+                                    asp-action="Advisors">Advisory Board</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="OncopretR">ONCOPRETR &trade;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+
+        
+<div class="container-fluid hero" style="background-image: url('/images/contact.jpg')">
+    <div class="row">
+        <h1 class="hero-text mx-auto">Contact Us</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row v-gap"></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9077223271!2d-0.12573508402796243!3d51.51490891797489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ccaaa0b0b7%3A0xbe144a0754857ae1!2s71-75%20Shelton%20St%2C%20London%20WC2H%209JQ%2C%20UK!5e0!3m2!1sen!2sin!4v1619501003600!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="col-6">
+            <h3>
+                GENTERPRETR UK
+            </h3>
+            <h5>
+                71–75 Shelton Street <br />
+                Covent Garden<br />
+                London<br />
+                WC2H 9JQ
+            </h5>
+
+            <div class="v-gap"></div>
+            <h3>Send us a Message</h3>
+            <p>
+                <a href="mailto:sudebs@genterpretr.com"><i class="lead bi bi-envelope-open"></i> sudebs@genterpretr.com</a>
+                <br />
+                <a href="mailto:maheshk@genterpretr.com"><i class="lead bi bi-envelope-open"></i> maheshk@genterpretr.com</a>
+            </p>
+
+           
+
+        </div>
+        <!-- /.row -->
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+
+    </div>
+
+    <div class="container-fluid">
+        <footer class="container py-1">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img src="/images/logo.svg" height="32px">
+                    <small class="d-block mb-3 text-muted">&copy; GenterpretR 2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a asp-controller="Home" asp-action="OncopretR">
+                                <h5>ONCOPRETER</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Research" asp-action="Index">
+                                <h5>Research</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Clients">
+                                <h5>Clients</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Index">
+                                <h5>Core Team</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Collabs">
+                                <h5>Academic Collaborators</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Contact">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenterpretR</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/bootstrap-lux.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/carousel.css" />
+    <style>
+        .vl {
+            border-right: 1px solid LightSteelBlue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                        src="/images/branding.png" alt="" height="32"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse mr-auto">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Research"
+                                asp-action="Index">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="News">News</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Clients">Clients</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                People
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams" asp-action="Index">Core
+                                    Team</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams"
+                                    asp-action="Collabs">Academic Collaborators</a>
+                                <a class="dropdown-item " asp-area="" asp-controller="Teams"
+                                    asp-action="Advisors">Advisory Board</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="OncopretR">ONCOPRETR &trade;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video autoplay loop class="image-fit h-100">
+                        <source src="/images/vid1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1 class="text-white carousel-h1-shadow-bk">Genomic data-driven personalized healthcare
+                            </h1>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay loop>
+                        <source src="/images/vid2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1 class="text-white carousel-h1-shadow-bk">Operating system for precision medicine</h1>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay loop>
+                        <source src="/images/vid3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1 class="text-white carousel-h1-shadow-bk">Opening a new dimension in precision oncology
+                            </h1>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay loop>
+                        <source src="/images/vid4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1 class="text-white carousel-h1-shadow-bk">Decoding the mystery of rare diseases</h1>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Marketing messaging and featurettes
+================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4 vl">
+                    <h4>We help harness the power of genomic analysis</h4>
+                    <p class="lead">
+                        We work with hospitals, drug-makers, clinicians, and biomedical scientists to help them dive
+                        into the wealth of information residing inside large volumes of genetic readouts. We specialize
+                        in applying cognitive computing and deep learning approaches to link genotype with phenotype. We
+                        also establish bespoke bioinformatics pipelines and scalable machine learning/statistical
+                        algorithms to enable the integration and processing of clinically relevant multi-omic datasets.
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 vl">
+
+                    <h4>We believe in providing personalized care for all.</h4>
+                    <div class="v-gap"></div>
+                    <p class="lead">
+                        Every genome represents substantial exclusivity, which tells about its disease predispositions
+                        and vulnerabilities. We are building applications that connect genomic data with drugs'
+                        structural attributes to infer drug response. Our proprietory APIs can easily be integrated with
+                        clinical decision management systems to make personalized therapy a reality.
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <h4>We decode the underlying mystery of rare diseases</h4>
+
+                    <p class="lead">
+                        The genotype-phenotype association remains to be an unsolved puzzle. Genomic alterations are
+                        sparse, obscuring our understanding of the cause of rare diseases. This also hinders treatment
+                        decision-making for complex diseases such as cancers. Our in-house AI toolbox enables vector
+                        embedding of mutations by ingesting volumes of mutation data, thereby enabling the
+                        identification of causal mutations without requiring a large sample size.
+                    </p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+        </div><!-- /.container -->
+        <!-- /PARTNERSHIP -->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row min-vh-100 bg-primary no-gutters border-0">
+                    <div class="col-lg-6 text-dark showcase-img " style="background-image: url('images/team.jpg');">
+                    </div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2 class="text-white-50">Say Hi.</h2>
+                        <p class="lead mb-0 text-white">Get to know who we are and what we do.</p>
+                        <br>
+                        <a class="btn btn-light" asp-area="" asp-controller="Teams" asp-action="Index">Meet Us</a>
+                    </div>
+                </div>
+
+                <div class="row min-vh-100 bg-dark text-light no-gutters">
+
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                        style="background-image: url('images/partner.jpg');"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2 class="text-white-50">Join Us</h2>
+                        <p class="lead mb-0 text-white">Partner with us, make profound discoveries.</p>
+                        <br>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-light" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Join Us
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Sorry!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="lead text-black-50">
+                                            Nothing yet! Feel free to check back later.
+                                        </p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- /END PARTNERSHIP -->
+
+    </div>
+
+    <div class="container-fluid">
+        <footer class="container py-1">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img src="/images/logo.svg" height="32px">
+                    <small class="d-block mb-3 text-muted">&copy; GenterpretR 2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a asp-controller="Home" asp-action="OncopretR">
+                                <h5>ONCOPRETER</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Research" asp-action="Index">
+                                <h5>Research</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Clients">
+                                <h5>Clients</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Index">
+                                <h5>Core Team</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Collabs">
+                                <h5>Academic Collaborators</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Contact">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+</body>
+
+</html>

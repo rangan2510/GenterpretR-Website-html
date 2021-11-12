@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GenterpretR</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/bootstrap-lux.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                        src="/images/branding.png" alt="" height="32"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse mr-auto">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Research"
+                                asp-action="Index">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="News">News</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Clients">Clients</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                People
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams" asp-action="Index">Core
+                                    Team</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Teams"
+                                    asp-action="Collabs">Academic Collaborators</a>
+                                <a class="dropdown-item " asp-area="" asp-controller="Teams"
+                                    asp-action="Advisors">Advisory Board</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="OncopretR">ONCOPRETR &trade;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home"
+                                asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+
+        <div class="container-fluid hero" style="background-image: url('/images/news.jpg')">
+            <div class="row">
+                <h1 class="hero-text mx-auto">News</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row v-gap"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <h1>Molecular testing of COVID-19 testing from Saliva</h1>
+                <p>
+                    GenterpretR LLC alongside its commercial partners Central Laboratory Indore and Dr. Lal Path Laboratory is launching a robust, rapid, reliable, and reproducible COVID-19 testing facility. Below are some of the key features of our technology:
+                </p>
+                <ol>
+                    <li>
+                        Unlike other methods, this novel, easy, safe, cost-effective, and non-invasive diagnostic approach allows testing of COVID-19 from patients’ self-collected saliva samples.
+                    </li>
+                    <li>
+                        It avoids the painstaking collection of nasopharyngeal swap samples.
+                    </li>
+                    <li>
+                        It also allows the detection of COVID-19 variants without compromising on the sensitivity of the test.
+                    </li>
+                    <li>
+                        Due to its microfluidics architecture, the technology allows 6000* tests per day in a high-throughput manner.
+                    </li>
+                    <li>
+                        Sample collection does not require Viral Transport Media (VTM) and therefore, enables testing of samples from remote areas.
+                    </li>
+                    <li>
+                        Due to its multiplexing nature test reports will be available within a day.
+                    </li>
+                    <li>
+                        Our Integrated Fluidic Circuit (IFC) technology both prepares and performs thousands of reactions in Nanoliter volumes, saving time, money, and reducing pipetting steps by 95%.
+                    </li>
+                </ol>
+                <h2>
+                    What is technology?
+                </h2>
+                <p>
+                    GenterpretR LLC set up the BioMark HD (Fluidigm), an automated, high-performance PCR/qPCR system that uses microfluidics technology to process samples at nano liter-scale volumes for gene expression, genotyping, sample identification, copy number variation analysis, and digital PCR. Due to its architecture, it allows the processing of hundreds to thousands of samples within a day. For COVID-19 testing, GenterpretR intends to use Advanta Dx SARS-CoV-2 RT-PCR Assay (Fluidigm) and its successor mutational panel assay that collectively allows qualitative detection of nucleic acid from SARS-CoV-2 in saliva specimens and variants detection.
+                </p>
+                <p>
+                    <h2>
+                        Approvals for Testing
+                    </h2>
+                </p>
+        
+                <p>
+                    <ol>
+                        <li>
+                            FDA-EUA approved
+                        </li>
+                        <li>
+                            DCGI-CDSCO licensed for use in India by ICMR approved testing labs
+                        </li>
+                    </ol>
+                </p>
+               
+                
+            </div>
+        </div>
+        
+        <hr class="featurette-divider">
+        
+
+    </div>
+
+    <div class="container-fluid">
+        <footer class="container py-1">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img src="/images/logo.svg" height="32px">
+                    <small class="d-block mb-3 text-muted">&copy; GenterpretR 2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a asp-controller="Home" asp-action="OncopretR">
+                                <h5>ONCOPRETER</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Research" asp-action="Index">
+                                <h5>Research</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Clients">
+                                <h5>Clients</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Index">
+                                <h5>Core Team</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Teams" asp-action="Collabs">
+                                <h5>Academic Collaborators</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Contact">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+                <div class="col-6 col-md">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+</body>
+
+</html>
